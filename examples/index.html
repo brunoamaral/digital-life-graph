@@ -20,106 +20,62 @@
       services = [
         ['Facebook', '#364A90'], 
         ['Twitter','#1D80BB'], 
-        ['Flickr','#F40075'], 
-        ['Instagram','#A7865D'], 
         ['G+','#BB2A1A'], 
-        ['EyeEm','#ECEAEA'], 
-        ['Tumblr','#2A405F'], 
-        ['Vimeo','#25A3E2'], 
+        ['LinkedIn_Page','#2A405F'], 
         ['Youtube','#B6201D'], 
         ['Blog','#B93513'], 
-        ['Pocket','#EA2443'], 
-        ['Pinboard','#315AFF'], 
-        ['Instapaper','#EFEFED'], 
-        ['Last.fm','#BC0C16'], 
-        ['Spotify','#80B600'], 
-        ['LinkedIn','#216FB3'], 
-        ['Foursquare','#1E7FC4'],
-        ['Netflix','#A40000'],
-        ['Flipboard','#8A0000']
+        ['LinkedIn_Group','#216FB3'], 
+        ['Xing','#A40000'],
+        ['Newsletter','#8A0000'],
       ]
 
       // Devices you use to feed or access the services
       devices = [
-        ['phone','#ECEAEA'],
-        ['dslr','#ECEAEA'],
-        ['kindle','#ECEAEA'],
-        ['tablet','#ECEAEA'],
-        ['computer','#ECEAEA'],
-        ['xbox','#ECEAEA'],
+        ['web enthusiasts','#ECEAEA'],
+        ['developers','#ECEAEA'],
+        ['designers','#ECEAEA'],
+        ['product and business managers','#ECEAEA'],
+        ['CEO','#ECEAEA'],
+        ['Media','#ECEAEA'],
       ]
 
       // Defines relationships between services
       service_edges = [
-        ['instagram','facebook'],
-        ['eyeem', 'facebook'],
-        ['blog', 'facebook'],
-        ['flickr', 'facebook'],
-        ['spotify','last.fm'],
-        ['spotify','facebook'],
-        ['netflix', 'facebook'],
-        ['facebook', 'flipboard'],
-        ['twitter', 'flipboard'],
-        ['g+', 'flipboard'],
-        ['flipboard', 'pocket'],
-        ['flipboard', 'instapaper'],
-        ['vimeo','tumblr'],
-        ['youtube','tumblr'],
-        ['flickr','tumblr'],
-        ['instagram', 'tumblr'],
-        ['instapaper', 'blog'],
-        ['instagram', 'foursquare'],
-        ['eyeem','foursquare'],
-        ['instagram','twitter'],
-        ['eyeem','twitter'],
-        ['blog','twitter'],
-        ['tumblr','twitter'],
-        ['tumblr','tumblr'],
-        ['last.fm', 'twitter'],
+        ['blog','facebook'],
+        ['blog', 'twitter'],
+        ['blog', 'g+'],
+        ['blog', 'LinkedIn_Page'],
+        ['blog','LinkedIn_Group'],
+        ['blog','Newsletter'],
+        ['Youtube', 'blog'],
       ]
 
       //Defines relationships were the device feeds the service
       device_service_edges = [
-        ['dslr','flickr'],
-        ['dslr','facebook'],
-        ['dslr','g+'],
-        ['phone','instagram'],
-        ['phone','eyeem'],
-        ['phone','facebook'],
-        ['phone','twitter'],
-        ['phone','youtube'],
-        ['phone','foursquare'],
-        ['phone','instapaper'],
-        ['computer','blog'],
-        ['tablet', 'instapaper'],
-        ['tablet', 'pocket']
+        ['web enthusiasts','twitter'],
+        ['web enthusiasts','facebook'],
+        ['web enthusiasts', 'g+']
+        ['designers','facebook'],
+        ['designers','twitter'],
+        ['product and business managers','LinkedIn_Page'],
+        ['CEO','LinkedIn_Page'],
+        ['product and business managers','twitter'],
+        ['media','twitter'],
+        ['media','facebook'],
       ]
 
       // Defines relationships where the service is consumed on a device
       service_device_edges = [
-        ['instagram','phone'],
-        ['eyeem','phone'],
-        ['facebook','phone'],
-        ['youtube','phone'],
-        ['spotify','phone'],
-        ['flipboard','phone'],
-
-        ['instapaper','kindle'],
-
-        ['flipboard','tablet'],
-        ['g+','tablet'],
-        ['netflix','tablet'],
-        ['tumblr','tablet'],
-        ['facebook','tablet'],
-
-        ['netflix','xbox'],
-        
-        ['facebook','computer'],
-        ['flickr','computer'],
-        ['twitter','computer'],
-        ['netflix','computer'],
-        ['linkedin','computer'],
-        ['spotify','computer'],
+        ['twitter', 'web enthusiasts'],
+        ['facebook', 'web enthusiasts'],
+        ['g+', 'web enthusiasts']
+        ['facebook','designers'],
+        ['twitter','designers'],
+        ['LinkedIn_Page','product and business managers'],
+        ['LinkedIn_Page','CEO'],
+        ['twitter','product and business managers'],
+        ['twitter','media'],
+        ['facebook','media'],
       ]
 
       $(function() {
